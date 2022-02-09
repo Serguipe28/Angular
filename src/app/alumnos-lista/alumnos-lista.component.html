@@ -1,0 +1,29 @@
+<div class="col-2">
+  <app-clase-lista (globalElegida)="alCambiarClase($event)"></app-clase-lista>
+</div>
+<div class="row justify-content-md-center">
+  <div class="col-8">
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellidos</th>
+          <th scope="col">Direccion</th>
+          <th scope="col">Fecha de nacimiento</th>
+          <th scope="col">clase ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let alumno of alumnos">
+          <tr *ngIf="claseSeleccionada == alumno.claseId">
+            <th scope="row">{{ alumno.Nombre }}</th>
+            <td>{{ alumno.Apellidos }}</td>
+            <td>{{ alumno.direccion }}</td>
+            <td>{{ alumno.fnac | date: "dd/MM/y" }}</td>
+            <td>{{ alumno.claseId }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>

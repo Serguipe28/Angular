@@ -1,0 +1,10 @@
+<p><b>Aplicacion de Colegio</b></p>
+
+<select  class="form-select" aria-label="Default select example" name="lasclases" [(ngModel)]="claseElegida" (change)="cuandoCambiemos()">
+
+    <ng-container *ngFor="let clase of clases">
+        <option value="{{ clase.Id}}"> {{clase.NomClase}}</option>
+
+    </ng-container>
+    
+</select>
