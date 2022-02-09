@@ -30,5 +30,6 @@ export class ClaseListaComponent implements OnInit {
     this.globalElegida.emit(this.claseElegida);
   }
   
+  
 
 }

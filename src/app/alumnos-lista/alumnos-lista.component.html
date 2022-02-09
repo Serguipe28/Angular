@@ -10,6 +10,7 @@
           <th scope="col">Apellidos</th>
           <th scope="col">Direccion</th>
           <th scope="col">Fecha de nacimiento</th>
+          <th scope="col">Sexo</th>
           <th scope="col">clase ID</th>
         </tr>
       </thead>
@@ -20,6 +21,7 @@
             <td>{{ alumno.Apellidos }}</td>
             <td>{{ alumno.direccion }}</td>
             <td>{{ alumno.fnac | date: "dd/MM/y" }}</td>
+            <td>{{ alumno.sexo }}</td>
             <td>{{ alumno.claseId }}</td>
           </tr>
         </ng-container>
