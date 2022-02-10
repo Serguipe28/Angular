@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { Clase } from "./../Interfaces/iclase";
-import { ClaseService } from "./../services/clase.service";
+import { Clase } from "../Interfaces/iclase";
+import { ClaseService } from "../Services/clase.service";
 
 @Component({
   selector: 'app-clase-lista',
