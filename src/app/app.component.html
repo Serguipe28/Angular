@@ -1,7 +1,27 @@
+<!-- <app-alumnos-lista></app-alumnos-lista> -->
 
-<app-alumnos-lista></app-alumnos-lista>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink=""><b>Angular</b></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="Alumno">Alumnos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="Profesores">Profesores</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
 
-
-
-
-
+<!-- <div style="padding: 10px;">
+    <ul class="nav nav-tabs">
+        <li> <a routerLink="Alumno"> Alumnos</a> </li>
+        <li> <a routerLink="Profesores"> Profesores</a></li>
+        <li></li>
+    </ul>
+    <router-outlet></router-outlet>
+</div> -->
