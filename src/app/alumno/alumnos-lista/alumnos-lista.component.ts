@@ -16,10 +16,12 @@ export class AlumnosListaComponent implements OnInit {
 
   constructor( private alumnoService: AlumnosService) { }
 
+  //Carga todos los alumnos en el vector
   ngOnInit(): void {
     this.alumnoService.getAllAlumnos().subscribe(alumno => (this.alumnos = alumno));
   }
 
+  //Cambia la clase seleccionada en el desplegable
   alCambiarClase(opcionSeleccionada : number) : void{
     this.claseSeleccionada = opcionSeleccionada;
   }

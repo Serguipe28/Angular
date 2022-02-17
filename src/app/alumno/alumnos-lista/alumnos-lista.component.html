@@ -17,7 +17,7 @@
       <tbody>
         <ng-container *ngFor="let alumno of alumnos">
           <tr *ngIf="claseSeleccionada == alumno.claseId">
-            <th scope="row">{{ alumno.Nombre }}</th>
+            <th scope="row"> <a [routerLink]="['/Alumno', alumno.Nombre]"> {{ alumno.Nombre }}</a></th>
             <td>{{ alumno.Apellidos }}</td>
             <td>{{ alumno.direccion }}</td>
             <td>{{ alumno.fnac | date: "dd/MM/y" }}</td>

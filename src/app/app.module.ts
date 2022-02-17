@@ -11,11 +11,15 @@ import { FormsModule } from '@angular/forms';
 import { ClaseListaComponent } from "./clase/clase-lista/clase-lista.component";
 import { AlumnosListaComponent } from './alumno/alumnos-lista/alumnos-lista.component';
 import { ProfesoresComponent } from './profesores/profesores/profesores.component';
-import { PaginaNoEncontradaComponent } from './otros/pagina-no-encontrada/pagina-no-encontrada.component'
+import { PaginaNoEncontradaComponent } from './otros/pagina-no-encontrada/pagina-no-encontrada.component';
+import { ClasesComponent } from './clase/clases/clases.component'
+import { AlumnoComponent } from "./alumno/alumno/alumno.component";
 
 const appRutas: Routes = [
   { path: 'Alumno', component:AlumnosListaComponent },
+  { path: 'Alumno/:nombre', component:AlumnoComponent },
   { path: 'Profesores', component: ProfesoresComponent},
+  { path: 'Clases', component:ClasesComponent},
   { path: '', redirectTo: '/profesores', pathMatch: 'full' },
   { path: '**', component: PaginaNoEncontradaComponent  }
 ]
@@ -27,6 +31,7 @@ const appRutas: Routes = [
     AlumnosListaComponent,
     ProfesoresComponent,
     PaginaNoEncontradaComponent,
+    ClasesComponent,
     
   ],
   imports: [

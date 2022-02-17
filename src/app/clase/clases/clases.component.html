@@ -1,0 +1,20 @@
+
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre Clase</th>
+            <th scope="col">Lugar</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let clase of clases">
+                <th scope="row"> {{ clase.Id }}</th>
+                <td> {{ clase.NomClase }}</td>
+                <td> {{ clase.Lugar }}</td>
+
+            </tr>
+        </tbody>
+      </table>
+</div>
